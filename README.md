@@ -73,3 +73,13 @@ angular.module('module1')
 });
 ```
 `function()` - inject only Instances (like Services) and Constants
+***
+#### _Summary_
+* `angular.module` method takes 2 arguments to create a module:
+    * name of module;
+    * array of string module name dependencies.
+* `angular.module` method with just name of module retrieves the previously created method. Then, you can declare components, controllers, etc., on it.
+* `module.config` method fires before module.run method.
+* All dependency modules get configured first.
+* It doesn't matter which modules are listed first as long as module declarations are listed before artifact declarations on that module. 
+***
